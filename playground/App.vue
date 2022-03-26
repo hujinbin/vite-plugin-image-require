@@ -1,5 +1,7 @@
 <template>
-
+    <div>
+        <img :src="require('./assets/logo.png')"/>
+    </div>
 </template>
 
 <script>
