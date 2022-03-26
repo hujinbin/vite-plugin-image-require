@@ -1,0 +1,21 @@
+{
+  "name": "vite-plugin-image-require",
+  "version": "0.0.1",
+  "description": "vite-plugin，图片require的处理",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsc -w -p . --incremental --skipLibCheck",
+    "build": "rm -rf dist && tsc -p . --skipLibCheck",
+    "test": "jest --clearCache && jest --runInBand --forceExit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hujinbin/vite-plugin-image-require.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hujinbin/vite-plugin-image-require/issues"
+  },
+  "homepage": "https://github.com/hujinbin/vite-plugin-image-require#readme"
+}
