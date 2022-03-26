@@ -12,7 +12,7 @@ const config = defineConfig({
     minify: false,
   },
   plugins: [
-    imageRequirePlugin(),
+    imageRequirePlugin() as any,
   ],
 })
 

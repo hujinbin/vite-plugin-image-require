@@ -11,5 +11,8 @@ export default {
         return {
         };
     },
+    // created(){
+    //     const a = require('./a')
+    // }
 };
 </script>
