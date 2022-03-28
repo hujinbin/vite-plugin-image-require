@@ -8,9 +8,10 @@ export function imageRequirePlugin(){
                 if(content.match(/\.(jpeg|jpg|gif|png|bmp|webp|svg)/g)){ // 检测到require的是图片
                     let regex = /('|")(.+?)('|")/g;
                     const urlArr = content.match(regex)
-                    result = urlArr[0];
+                    const url = urlArr[0]
+                    result = `new URL(${url}, import.meta.url).href`;
                 }
-                return result;
+                return result
             })
             return {
                 code,
