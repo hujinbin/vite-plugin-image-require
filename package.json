@@ -1,8 +1,8 @@
 {
   "name": "vite-plugin-image-require",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "vite-plugin，图片require的处理",
-  "main": "index.js",
+  "main": "dist/index.js",
   "files": [
     "dist"
   ],
