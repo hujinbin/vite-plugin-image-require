@@ -1,8 +1,16 @@
 {
   "name": "vite-plugin-image-require",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "vite-plugin，图片require的处理",
   "main": "index.js",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "vite",
+    "vite-plugin",
+    "image-require"
+  ],
   "scripts": {
     "dev": "tsc -w -p . --incremental --skipLibCheck",
     "build": "rm -rf dist && tsc -p . --skipLibCheck",

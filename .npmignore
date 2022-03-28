@@ -4,6 +4,7 @@ src/
 static/
 test/
 node_modules/
+playground/
 .babelrc
 .editorconfig
 .gitignore
