@@ -15,6 +15,7 @@ export function imageRequirePlugin(){
             })
             return {
                 code,
+                map: null
             }
         }
     }
