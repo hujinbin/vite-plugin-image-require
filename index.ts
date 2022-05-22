@@ -2,7 +2,12 @@
 export function imageRequirePlugin(){
     return {
         name:'vite-plugin-image-require',
-        async transform(code:any) {
+        async transform(code:any,path:any) {
+            if(code === '' && path.indexOf('.js') >-1){
+                return {
+                    code: 'export default {}',
+                } 
+            }
             code = code.replace(/require\(.*?\)/img, (content:any) => {
                 let result = content;
                 if(content.match(/\.(jpeg|jpg|gif|png|bmp|webp|svg)/g)){ // 检测到require的是图片
